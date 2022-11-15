@@ -1,0 +1,250 @@
+/* Removes previous settings */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Red Hat Display', sans-serif;
+
+}
+
+:root {
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+        --Very-pale-blue: hsl(225, 100%, 98%);
+        --Desaturated-blue: hsl(224, 23%, 55%);
+        --Dark-blue: hsl(223, 47%, 23%);
+        --text-color: rgba(104, 98, 98, 0.562);
+}
+
+body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: lighten;
+        padding: 20px;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        height: 100%;
+        width: 100%;
+        position: relative;
+}
+
+/* Styling for the whole content page */
+.whole-page {
+
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 10%;
+
+}
+
+/* Style for banner image */
+.whole-page .banner {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+}
+
+/* style for text content */
+.content {
+        background-color: #fff;
+        height: 80%;
+        width: auto;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        /* background-color: aquamarine; */
+}
+
+/* order summary plan */
+h1 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 25px;
+        padding: 15px;
+}
+
+/* style for text below heading */
+.first-par {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px;
+        display: block;
+        padding-right: auto;
+        padding-left: auto;
+        line-height: 25px;
+        position: relative;
+        margin-right: 30px;
+        margin-left: 30px;
+        color: var(--text-color);
+}
+
+/* style for div with annual plan with img div */
+.plan {
+        align-items: center;
+        background-color: var(--Very-pale-blue);
+        height: 20%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: var(--pale-blue);
+}
+
+.plan img {
+        width: auto;
+        height: 70px;
+}
+
+/* stle for div with text annual plan only */
+.annual-plan {
+        display: block;
+}
+
+.annual-plan p {
+        color: var(--text-color);
+        font-weight: 700;
+}
+
+/* Remove breakpoint for desktop to remain with mobile breakpoint */
+.desktop {
+        display: none;
+}
+
+.link {
+        font-size: 15px;
+        font-weight: 500;
+}
+
+.link:hover {
+        text-decoration: none;
+        color: var(--Desaturated-blue);
+        font-weight: 700;
+}
+
+
+button {
+        text-align: center;
+        height: 50px;
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+        width: 90%;
+        border: none;
+        background-color: transparent;
+}
+
+.button {
+        background-color: var(--bright-blue);
+        border-radius: 9px;
+        color: var(--Very-pale-blue);
+        font-weight: 700;
+        box-shadow: 10px 10px 40px 5px var(--text-color);
+        letter-spacing: .5px;
+}
+
+.button:hover {
+        background-color: var(--Desaturated-blue);
+        cursor: pointer;
+}
+
+.button2 {
+        padding-top: 10px;
+        background-color: none;
+        font-weight: 700;
+        letter-spacing: .5px;
+        color: var(--text-color);
+}
+
+.button2:hover {
+        color: black;
+        cursor: pointer;
+
+}
+
+/* style for footer */
+.attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 10px;
+}
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+
+        /* Mobile phones less than 600px */
+        body {
+                /* background-color: red; */
+                background-image: url(./images/pattern-background-desktop.svg);
+                margin-top: 20px;
+                padding-left: auto;
+                padding-right: auto;
+                align-self: center;
+        }
+
+        .whole-page {
+                margin: auto;
+                width: 80%;
+        }
+}
+
+@media screen and (min-width: 768px) {
+
+        /* Potrait tables and large phones */
+        body {
+                /* background-color: rgb(0, 255, 136); */
+                background-image: url(./images/pattern-background-desktop.svg);
+                width: 100%;
+                padding-left: auto;
+                padding-right: auto;
+        }
+
+        .whole-page {
+                margin: auto;
+                width: 60%;
+        }
+}
+
+@media screen and (min-width: 992px) {
+        body {
+                /* background-color: rgb(78, 61, 144); */
+                background-image: url(./images/pattern-background-desktop.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                padding-left: auto;
+                padding-right: auto;
+
+        }
+
+        .whole-page {
+                margin: auto;
+                width: 60%;
+                height: 40%;
+        }
+
+}
+
+
+@media screen and (min-width: 1080px) {
+        body {
+                /* background-color: rgb(51, 0, 255); */
+                background-image: url(./images/pattern-background-desktop.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                padding-left: auto;
+                padding-right: auto;
+                height: 60%;
+        }
+
+        .whole-page {
+                margin: auto;
+                width: 40%;
+        }
+}
